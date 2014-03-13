@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="100" height="100" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="tumblr_mfqqqePENU1rs1a0mo1_500" tilewidth="32" tileheight="32">
+  <image source="../Desktop/tumblr_mfqqqePENU1rs1a0mo1_500.jpg" width="450" height="600"/>
+ </tileset>
+ <tileset firstgid="253" name="star of dawn_0" tilewidth="32" tileheight="32">
+  <image source="../Desktop/star of dawn_0.png" width="72" height="72"/>
+ </tileset>
+ <tileset firstgid="257" name="whisp_0" tilewidth="32" tileheight="32">
+  <image source="../Desktop/whisp_0.png" width="100" height="100"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt1UOPGAEchvFuu9vutodah1qH2jaSmklt27Zt27Zt27bdb1A8TT/DZprM8yS/mcsc3uR/mDhx7H8qAnERD5GIQnwkQDRikBCJ/n7Lx3ERLyKgsSEoMZIgKZIhOVIgJVIhNdIgLSK5QxTie49YKx3SIwMyIhMyIwuyIhuyIwcScIdoxHiPWCsnciE38iAv8iE/CqAgCqEwiqAoigWyNBwVRwmURCmURhmURTmURwVURCVURpUghoakn/iFqqiG6qiBmqiF2qiDuqiH+mgQyNJw9Pvvg/9BQ16N0BhN0BTN0Bwt0BKt0BptghgaktqiHdqjAzqiEzqjC7qiG7qjB3qiVyBLw1Fv9EFf9EN/DMBADMJgDMFQDMNwjAhkaTgaiVEYjTEYi3EYjwmYiEmYjCmYimlBDA1J0zEDMzELszEHczEP87EAC7EIi7EkkKXhaCmWYTlWYCVWYTXWYC3WYT02YCM2BTE0JG3GFmzFNmzHDuzELuzGHuzFPuzHgUCWhqODOITDOIKjOIbjOIGTOIXTOIOzOBfE0JB0HhdwEZdwGVdwFddwHTdwE7dwG3cCWRqO7uIe7uMBHuIRHuMJnuIZnuMFXuJVEEND0mu8wVu8w3t8wEd8wmd8wVd8w3f8CGSpmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZ2b/+AM9lcB4=
+  </data>
+ </layer>
+</map>
