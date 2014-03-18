@@ -1,5 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Faster+One);
 @import url(http://fonts.googleapis.com/css?family=Galindo);
+@import url(http://fonts.googleapis.com/css?family=Sigmar+One);
+@import url(http://fonts.googleapis.com/css?family=Lemon);
+@import url(http://fonts.googleapis.com/css?family=Sonsie+One);
+@import url(http://fonts.googleapis.com/css?family=Black+Ops+One);
 li{
     font-family: 'Galindo', cursive;
 }
@@ -10,3 +14,12 @@ a:visited{
 body{
     background-color:#C0C0C0 ;
 }
+
+
+
+/*
+font-family: 'Sigmar One', cursive;
+font-family: 'Lemon', cursive;
+font-family: 'Sonsie One', cursive;
+font-family: 'Black Ops One', cursive;
+/*
