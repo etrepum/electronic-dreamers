@@ -17,7 +17,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
         this.parent(x, y, settings);
 
 		// set the default horizontal & vertical speed (accel vector)
-        this.setVelocity(3, 15);
+        this.setVelocity(3, 0);
 
         // adjust the bounding box
         this.updateColRect(8, 48, 8, 54);
@@ -45,18 +45,18 @@ game.PlayerEntity = me.ObjectEntity.extend({
 			// update the entity velocity
 			this.vel.x += this.accel.x * me.timer.tick;
         } else {
-            this.vel.x = 0;
+            this.vel.x = 0.3;
         }
-        if (me.input.isKeyPressed('jump')) {
+        if (me.input.isKeyPressed('Drop')) {
 			// make sure we are not already jumping or falling
             if (!this.jumping && !this.falling) {
 				// set current vel to the maximum defined value
 				// gravity will then do the rest
 				this.vel.y = -this.maxVel.y * me.timer.tick;
 				// set the jumping flag
-				this.jumping = true;
+				this.jumping = false;
                 // play some audio 
-                me.audio.play("jump");
+                me.audio.play("Drop");
 			}
 
         }
