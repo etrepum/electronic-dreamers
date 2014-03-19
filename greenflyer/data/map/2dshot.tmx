@@ -21,34 +21,5 @@
     <property name="spritewidth" value="64"/>
    </properties>
   </object>
-  <object gid="42" x="143" y="330"/>
-  <object gid="42" x="189" y="331"/>
-  <object gid="42" x="181" y="333"/>
-  <object gid="42" x="170" y="334"/>
-  <object gid="42" x="129" y="335"/>
-  <object gid="42" x="112" y="336"/>
-  <object gid="42" x="70" y="340"/>
-  <object gid="42" x="40" y="334"/>
-  <object gid="42" x="231" y="336"/>
-  <object gid="42" x="254" y="335"/>
-  <object gid="42" x="217" y="329"/>
-  <object gid="42" x="295" y="333"/>
-  <object gid="42" x="330" y="339"/>
-  <object gid="42" x="364" y="338"/>
-  <object gid="42" x="383" y="334"/>
-  <object gid="42" x="577" y="327"/>
-  <object gid="42" x="526" y="336"/>
-  <object gid="42" x="564" y="336"/>
-  <object gid="42" x="612" y="334"/>
-  <object gid="42" x="672" y="324"/>
-  <object gid="42" x="722" y="331"/>
-  <object gid="42" x="676" y="327"/>
-  <object gid="42" x="696" y="330"/>
-  <object gid="42" x="603" y="241"/>
-  <object gid="42" x="465" y="221"/>
-  <object gid="42" x="373" y="249"/>
-  <object gid="42" x="425" y="215"/>
-  <object gid="42" x="647" y="210"/>
-  <object gid="42" x="756" y="208"/>
  </objectgroup>
 </map>
