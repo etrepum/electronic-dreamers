@@ -55,6 +55,8 @@ var game = {
         // enable the keyboard
         me.input.bindKey(me.input.KEY.LEFT,	"left");
         me.input.bindKey(me.input.KEY.RIGHT, "right");
+        me.input.bindKey(me.input.KEY.UP,	"up");
+        me.input.bindKey(me.input.KEY.DOWN, "down");
         me.input.bindKey(me.input.KEY.X, "jump", true);
 
 		// Start the game.
