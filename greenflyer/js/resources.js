@@ -12,6 +12,8 @@ game.resources = [
     // the main player spritesheet
 	{name: "gripe_run_right", type:"image", src: "data/img/sprite/gripe_run_right.png"},
 	// the parallax background
+    {name: "Spaceship", type:"image", src: "data/img/Spaceship.png"},
+	// the parallax background
 	{name: "area01_bkg0",         type:"image",	src: "data/img/area01_bkg0.png"},
 	{name: "area01_bkg1",         type:"image",	src: "data/img/area01_bkg1.png"},
 	{name: "space_bkg",         type:"image",	src: "data/img/space_bkg.jpg"},

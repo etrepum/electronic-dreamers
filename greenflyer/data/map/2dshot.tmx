@@ -32,8 +32,7 @@
   <object x="181" y="170" width="1" visible="0"/>
   <object name="mainPlayer" x="167" y="207" width="105" height="62">
    <properties>
-    <property name="image" value="gripe_run_right"/>
-    <property name="spritewidth" value="64"/>
+    <property name="image" value="Spaceship"/>
    </properties>
   </object>
  </objectgroup>
