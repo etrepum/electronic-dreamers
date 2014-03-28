@@ -19,9 +19,10 @@ game.PlayerEntity = me.ObjectEntity.extend({
 		// set the default horizontal & vertical speed (accel vector)
         this.setMaxVelocity(3, 3);
         this.gravity = 0;
-
+        this.alwaysUpdate = true;
         // adjust the bounding box
-        this.updateColRect(8, 48, 8, 54);
+        this.updateColRect(-68, 241, -50, 164);
+        //this.dimension = 241
     
         // set the display to follow our position on both axis
         me.game.viewport.follow(this.pos, me.game.viewport.AXIS.BOTH);
@@ -34,6 +35,9 @@ game.PlayerEntity = me.ObjectEntity.extend({
 
     ------ */
     update: function() {
+        if (Math.random() > 0.75) {
+            console.log(this.pos);
+        }
 
         if (me.input.isKeyPressed('left')) {
             // flip the sprite on horizontal axis
@@ -50,10 +54,16 @@ game.PlayerEntity = me.ObjectEntity.extend({
         } else if (me.input.isKeyPressed('up')) {
             this.vel.y = -20;
         }else if (me.input.isKeyPressed('down')) {
-            this.vel.y = 20;
+            if (this.pos.y < 372) {
+                //Stops the ship ^
+                this.vel.y = 20;
+            } else {
+                this.vel.y = 0;
+            }
         } else {
             this.vel.x = 0;
             this.vel.y = 0;
+            
         }
         if (me.input.isKeyPressed('jump')) {
 			// make sure we are not already jumping or falling
