@@ -160,11 +160,14 @@ an enemy Entity
 game.EnemyEntity = me.ObjectEntity.extend({
     init: function(x, y, settings) {
         // define this here instead of tiled
-        settings.image = "wheelie_right";
-        settings.spritewidth = 64;
+        settings.image = "EnemyDud";
+        settings.spritewidth = 15;
 
         // call the parent constructor
         this.parent(x, y, settings);
+        this.gravity = 0;
+
+        
 
         this.startX = x;
         this.endX = x + settings.width - settings.spritewidth;
@@ -178,7 +181,7 @@ game.EnemyEntity = me.ObjectEntity.extend({
         this.setVelocity(1, 6);
 
         // set collision rectangle
-        this.updateColRect(4, 56, 8, 56);
+        this.updateColRect(4, 15, 8, 15);
 
         // make it collidable
         this.collidable = true;
