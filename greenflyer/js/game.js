@@ -10,7 +10,7 @@ var game = {
 	// an object where to store game information
 	data : {
 		// score
-		score : 0
+		score : 9000
 	},
 	
 	
@@ -50,7 +50,7 @@ var game = {
         // add our player entity in the entity pool
         me.entityPool.add("mainPlayer", game.PlayerEntity);
         //me.entityPool.add("CoinEntity", game.CoinEntity);
-        me.entityPool.add("EnemyEntity", game.EnemyEntity);
+        me.entityPool.add("DeadlyEnemy", game.EnemyEntity);
 
         // enable the keyboard
         me.input.bindKey(me.input.KEY.LEFT,	"left");

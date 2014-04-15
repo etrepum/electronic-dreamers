@@ -19,6 +19,8 @@ game.resources = [
 	{name: "space_bkg",         type:"image",	src: "data/img/space_bkg.jpg"},
     {name: "EnemyDud", type:"image", src: "data/img/EnemyDud.jpg"},
     //Enemy is made
+    //{name: "EnemyDud2", type:"image", src: "data/img.EnemyDud2.jpg"}
+    //Second enemy is made
     // the spinning coin spritesheet
 	{name: "spinning_coin_gold",  type:"image",	src: "data/img/sprite/spinning_coin_gold.png"},
 	// our enemty entity
