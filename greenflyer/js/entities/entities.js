@@ -35,9 +35,8 @@ game.PlayerEntity = me.ObjectEntity.extend({
 
     ------ */
     update: function() {
-        if (Math.random() > 0.75) {
-            console.log(this.pos);
-        }
+        this.vel.x = 0;
+            this.vel.y = 0;
 
         if (me.input.isKeyPressed('left')) {
             // flip the sprite on horizontal axis
@@ -45,26 +44,31 @@ game.PlayerEntity = me.ObjectEntity.extend({
 			// update the entity velocity
 			//this.vel.x -= this.accel.x * me.timer.tick;
             this.vel.x = -20;
-        } else if (me.input.isKeyPressed('right')) {
+        } 
+        
+            if (me.input.isKeyPressed('right')) {
             // unflip the sprite
 			this.flipX(false);
 			// update the entity velocity
 			//this.vel.x += this.accel.x * me.timer.tick;
             this.vel.x = 20;
-        } else if (me.input.isKeyPressed('up')) {
+        } 
+        
+         if (me.input.isKeyPressed('up')) {
             this.vel.y = -20;
-        }else if (me.input.isKeyPressed('down')) {
+         }
+        
+        if (me.input.isKeyPressed('down')) {
             if (this.pos.y < 372) {
                 //Stops the ship ^
                 this.vel.y = 20;
             } else {
                 this.vel.y = 0;
             }
-        } else {
-            this.vel.x = 0;
-            this.vel.y = 0;
-            
         }
+    
+        
+        /*
         if (me.input.isKeyPressed('jump')) {
 			// make sure we are not already jumping or falling
             if (!this.jumping && !this.falling) {
@@ -78,7 +82,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
 			}
 
         }
-
+        */
         // check & update player movement
         this.updateMovement();
 
@@ -88,20 +92,16 @@ game.PlayerEntity = me.ObjectEntity.extend({
         if (res) {
             // if we collide with an enemy
             if (res.obj.type == me.game.ENEMY_OBJECT) {
-                // check if we jumped on it
-                if ((res.y > 0) && ! this.jumping) {
-                    // bounce (force jump)
-                    this.falling = false;
-                    this.vel.y = -this.maxVel.y * me.timer.tick;
-                    // set the jumping flag
-                    this.jumping = true;
-                    // play some audio
-                    me.audio.play("stomp");
-                } else {
-                    // let's flicker in case we touched an enemy
-                    this.renderable.flicker(45);
-                    me.game.viewport.shake(10, 500, me.game.viewport.AXIS.BOTH);
+                // the health goes down by one when enemy touches player
+                game.data.score=game.data.score-10;
+                if(game.data.score<=0) {
+                    //when the life is lower than 0, the game restarts
+                    me.state.change(me.state.PLAY);
                 }
+                // let's flicker in case we touched an enemy
+                this.renderable.flicker(45);
+                me.game.viewport.shake(10, 500, me.game.viewport.AXIS.BOTH);
+            
             }
         }
         
