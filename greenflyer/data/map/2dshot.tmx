@@ -43,19 +43,19 @@
     <property name="spritewidth" value="15"/>
    </properties>
   </object>
-  <object name="DeadlyEnemy" x="577" y="300" width="463" height="46">
+  <object name="DeadlyEnemy" x="-5" y="142" width="1569" height="29">
    <properties>
     <property name="image" value="EnemyDud"/>
     <property name="spritewidth" value="15"/>
    </properties>
   </object>
-  <object name="DeadlyEnemy" x="661" y="442" width="57" height="59">
+  <object name="DeadlyEnemy" x="455" y="100" width="44" height="25">
    <properties>
     <property name="image" value="EnemyDud"/>
     <property name="spritewidth" value="15"/>
    </properties>
   </object>
-  <object name="DeadlyEnemy" x="366" y="420" width="179" height="24">
+  <object name="DeadlyEnemy" x="272" y="195" width="1282" height="66">
    <properties>
     <property name="image" value="EnemyDud"/>
     <property name="spritewidth" value="15"/>
@@ -67,19 +67,19 @@
     <property name="spritewidth" value="15"/>
    </properties>
   </object>
-  <object name="DeadlyEnemy" x="376" y="19" width="34" height="480">
+  <object name="DeadlyEnemy" x="374" y="54" width="41" height="42">
    <properties>
     <property name="image" value="EnemyDud"/>
     <property name="spritewidth" value="15"/>
    </properties>
   </object>
-  <object name="DeadlyEnemy" x="817" y="35" width="203" height="51">
+  <object name="DeadlyEnemy" x="657" y="272" width="203" height="51">
    <properties>
     <property name="image" value="EnemyDud"/>
     <property name="spritewidth" value="15"/>
    </properties>
   </object>
-  <object name="DeadlyEnemy" x="665" y="362" width="458" height="54">
+  <object name="DeadlyEnemy" x="23" y="324" width="1572" height="81">
    <properties>
     <property name="image" value="EnemyDud"/>
     <property name="spritewidth" value="15"/>
