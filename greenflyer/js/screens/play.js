@@ -10,7 +10,7 @@ game.PlayScreen = me.ScreenObject.extend({
 		me.levelDirector.loadLevel("2dshot");
         
 		// reset the score
-		game.data.score = 9001;
+		game.data.score = 90000;
 
 		// add our HUD to the game world
 		this.HUD = new game.HUD.Container();

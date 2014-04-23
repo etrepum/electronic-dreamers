@@ -55,7 +55,7 @@
     <property name="spritewidth" value="15"/>
    </properties>
   </object>
-  <object name="DeadlyEnemy" x="272" y="195" width="1282" height="66">
+  <object name="DeadlyEnemy" x="293" y="199" width="1282" height="66">
    <properties>
     <property name="image" value="EnemyDud"/>
     <property name="spritewidth" value="15"/>

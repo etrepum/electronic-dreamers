@@ -93,7 +93,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
             // if we collide with an enemy
             if (res.obj.type == me.game.ENEMY_OBJECT) {
                 // the health goes down by one when enemy touches player
-                game.data.score=game.data.score-10;
+                game.data.score=game.data.score-150;
                 if(game.data.score<=0) {
                     //when the life is lower than 0, the game restarts
                     me.state.change(me.state.PLAY);
@@ -197,7 +197,7 @@ game.EnemyEntity = me.ObjectEntity.extend({
         // res.y >0 means touched by something on the bottom
         // which mean at top position for this one
         if (this.alive && (res.y > 0) && obj.falling) {
-            this.renderable.flicker(45);
+            this.renderable.flicker(10);
         }
     },
 
