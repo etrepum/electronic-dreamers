@@ -93,7 +93,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
             // if we collide with an enemy
             if (res.obj.type == me.game.ENEMY_OBJECT) {
                 // the health goes down by one when enemy touches player
-                game.data.score=game.data.score-150;
+                game.data.score=game.data.score-1500;
                 if(game.data.score<=0) {
                     //when the life is lower than 0, the game restartss
                     me.state.change(me.state.GAMEOVER);
