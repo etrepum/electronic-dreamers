@@ -96,7 +96,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
                 game.data.score=game.data.score-150;
                 if(game.data.score<=0) {
                     //when the life is lower than 0, the game restarts
-                    me.state.change(me.state.PLAY);
+                    me.state.change(me.state.GAMEOVER);
                 }
                 // let's flicker in case we touched an enemy
                 this.renderable.flicker(45);
