@@ -99,7 +99,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
                     me.state.change(me.state.GAMEOVER);
                 }
                 // let's flicker in case we touched an enemy
-                this.renderable.flicker(45);
+                this.renderable.flicker(14);
                 me.game.viewport.shake(10, 500, me.game.viewport.AXIS.BOTH);
             
             }
