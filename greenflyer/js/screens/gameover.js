@@ -13,7 +13,7 @@ game.GameOverScreen = me.ScreenObject.extend({
         this.scrollerfont = null;
         this.scrollertween = null;
 
-        this.scroller = "  GAMEOVER YOU PLAYED BADLY       ";
+        this.scroller = "  GAMEOVER YOU PLAYED BADLY    Note:We disown EVERYTHING thats in this game (its too good for us XD   ";
         this.scrollerpos = 150;
     },
 

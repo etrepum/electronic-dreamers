@@ -1,9 +1,3 @@
-/*jslint sloppy:true, browser: true, devel: true, eqeq: true, vars: true, white: true*/
-/*global game: true, debugPanel:true, me:true*/
-
-/*------------------- 
-a player entity
--------------------------------- */
 game.PlayerEntity = me.ObjectEntity.extend({
 
     /* -----
@@ -14,7 +8,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
 
     init: function(x, y, settings) {
         // call the constructor
-        this.parent(x, y, settings);
+        this.parent(x, y,settings);
 
 		// set the default horizontal & vertical speed (accel vector)
         this.setMaxVelocity(3, 3);
@@ -111,6 +105,11 @@ game.PlayerEntity = me.ObjectEntity.extend({
             this.parent();
             return true;
         }
+        
+       // if (this position .x > level x position) { this.pos.x<500
+            //do something
+        //turn around and touch the other side
+       // }
 		
 		// else inform the engine we did not perform
 		// any update (e.g. position, animation)
@@ -141,7 +140,8 @@ game.CoinEntity = me.CollectableEntity.extend({
 
         // play a "coin collected" sound
         me.audio.play("cling");
-
+        this.collidable = false;
+        me.game.world.removeChild(this);
         // give some score
         game.data.score += 250;        
 
@@ -158,6 +158,7 @@ game.CoinEntity = me.CollectableEntity.extend({
 an enemy Entity
 ------------------------ */
 game.EnemyEntity = me.ObjectEntity.extend({
+    
     init: function(x, y, settings) {
         // define this here instead of tiled
         settings.image = "EnemyDud";
@@ -200,17 +201,7 @@ game.EnemyEntity = me.ObjectEntity.extend({
             this.renderable.flicker(10);
         }
     },
-},
-    game.PowerUps = new me.PowerUp.extend({
-        init:function(x, y, settings) {
-        settings.image = "AishaS2"
-        settings.sprite = 15; 
-        this.parent(x, y, settings);
-        this.gravity = 0;
-}
-                                          }
-
-}
+    
     // manage the enemy movement
     update: function() {
         // do nothing if not in viewport
@@ -243,4 +234,15 @@ game.EnemyEntity = me.ObjectEntity.extend({
         return false;
     }
 });
+                                          
+game.PowerUps = me.PowerUp.extend({
+        init:function(x, y, settings) {
+            settings.image = "AishaS2"
+            settings.sprite = 15; 
+            this.parent(x, y, settings);
+            this.gravity = 0; 
+        }
+})
+
+
 
