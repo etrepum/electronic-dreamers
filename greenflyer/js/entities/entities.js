@@ -200,7 +200,17 @@ game.EnemyEntity = me.ObjectEntity.extend({
             this.renderable.flicker(10);
         }
     },
+},
+    game.PowerUps = new me.PowerUp.extend({
+        init:function(x, y, settings) {
+        settings.image = "AishaS2"
+        settings.sprite = 15; 
+        this.parent(x, y, settings);
+        this.gravity = 0;
+}
+                                          }
 
+}
     // manage the enemy movement
     update: function() {
         // do nothing if not in viewport
@@ -220,7 +230,7 @@ game.EnemyEntity = me.ObjectEntity.extend({
         } else {
             this.vel.x = 0;
         }
-		
+        
         // check and update movement
         this.updateMovement();
 		
@@ -233,3 +243,4 @@ game.EnemyEntity = me.ObjectEntity.extend({
         return false;
     }
 });
+

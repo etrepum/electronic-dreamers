@@ -53,6 +53,8 @@ var game = {
         me.entityPool.add("mainPlayer", game.PlayerEntity);
         //me.entityPool.add("CoinEntity", game.CoinEntity);
         me.entityPool.add("DeadlyEnemy", game.EnemyEntity);
+        //This is an item
+        me.entityPool.add("AishaS2", game.PowerUp);
 
         // enable the keyboard
         me.input.bindKey(me.input.KEY.LEFT,	"left");
