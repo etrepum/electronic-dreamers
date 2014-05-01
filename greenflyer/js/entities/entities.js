@@ -14,6 +14,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
         this.setMaxVelocity(3, 3);
         this.gravity = 0;
         this.alwaysUpdate = true;
+        this.alertedEnd = false;
         // adjust the bounding box
         this.updateColRect(-68, 241, -50, 164);
         //this.dimension = 241
@@ -60,7 +61,13 @@ game.PlayerEntity = me.ObjectEntity.extend({
                 this.vel.y = 0;
             }
         }
-    
+        
+        if( this.pos.x>2058 && this.alertedEnd == false) {
+            alert('Turn around!!!!!!!');
+            this.alertedEnd = true;
+        }
+        
+        console.log(this.pos.x);
         
         /*
         if (me.input.isKeyPressed('jump')) {
@@ -98,6 +105,9 @@ game.PlayerEntity = me.ObjectEntity.extend({
             
             }
         }
+        
+        //if(res) {
+          //  if (
         
         // update animation if necessary
         if (this.vel.x!=0 || this.vel.y!=0) {
