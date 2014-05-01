@@ -243,12 +243,12 @@ game.EnemyEntity = me.ObjectEntity.extend({
         }
         return false;
     }
-});
+});å
                                           
-game.PowerUps = me.PowerUp.extend({
+game.PowerUp = me.CollectableEntity.extend({
         init:function(x, y, settings) {
             settings.image = "AishaS2"
-            settings.sprite = 15; 
+            settings.sprite = 230; 
             this.parent(x, y, settings);
             this.gravity = 0; 
         }
