@@ -245,7 +245,7 @@ game.EnemyEntity = me.ObjectEntity.extend({
     }
 });
                                               
-    game.PowerUpsEntity = me.ObjectEntity.extend({
+game.PowerUpsEntity = me.ObjectEntity.extend({
         
         init:function(x, y, settings) {
             settings.image = "AishaS2"
