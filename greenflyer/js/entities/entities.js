@@ -244,15 +244,32 @@ game.EnemyEntity = me.ObjectEntity.extend({
         return false;
     }
 });
-                                          
-game.PowerUps = me.PowerUp.extend({
+                                              
+    game.PowerUpsEntity = me.ObjectEntity.extend({
+        
         init:function(x, y, settings) {
             settings.image = "AishaS2"
             settings.sprite = 15; 
             this.parent(x, y, settings);
             this.gravity = 0; 
+        },
+        
+        onCollision: function() {
+        // do something when collected
+
+        // play a "coin collected" sound
+            me.audio.play("cling");
+            this.collidable = false;
+            me.game.world.removeChild(this);
+            // give some score
+            game.data.score =- 100;        
+    
+            // make sure it cannot be collected "again"
+            this.collidable = false;
+            // remove it
+            me.game.remove(this);
         }
-})
+});
 
 
 
